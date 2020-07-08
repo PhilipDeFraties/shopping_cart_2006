@@ -1,8 +1,8 @@
 class ShoppingCart
-  attr_reader :capacity, :products
+  attr_reader :name, :capacity
 
-  def initialize(capacity, products)
+  def initialize(name, capacity)
     @capacity = capacity
-    @products = products
+    @name = name
   end
 end
