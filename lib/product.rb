@@ -11,4 +11,8 @@ class Product
   def total_price
     @quantity * @unit_price
   end
+
+  def hoard
+    @quantity - @quantity
+  end
 end
