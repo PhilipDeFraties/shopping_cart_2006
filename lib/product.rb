@@ -13,6 +13,10 @@ class Product
   end
 
   def hoard
-    @quantity - @quantity
+    @quantity -= @quantity
+  end
+
+  def is_hoarded?
+    @quantity == 0 
   end
 end
