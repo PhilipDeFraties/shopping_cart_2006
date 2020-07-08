@@ -34,5 +34,6 @@ class ShoppingCartTest < Minitest::Test
     product2 = Product.new(:meat, 'chicken', 4.50, '2')
 
     assert_equal [product1], cart.add_product(product1)
+    assert_equal [product1, product2], cart.add_product(product2)
   end
 end
